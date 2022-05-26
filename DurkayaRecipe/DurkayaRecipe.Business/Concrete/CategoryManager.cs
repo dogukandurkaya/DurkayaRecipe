@@ -29,7 +29,7 @@ namespace DurkayaRecipe.Business.Concrete
 
         public void Delete(Category entity)
         {
-            throw new NotImplementedException();
+            _categoryRepository.Delete(entity);
         }
 
         public List<Category> GetAll()
@@ -39,17 +39,7 @@ namespace DurkayaRecipe.Business.Concrete
 
         public Category GetById(int id)
         {
-            throw new NotImplementedException();
-        }
-
-        public Category GetByIdWithCategories(int id)
-        {
-            return _categoryRepository.GetByIdWithCategories(id);
-        }
-
-        public Category GetByIdWithCategories(int? id)
-        {
-            throw new NotImplementedException();
+            return _categoryRepository.GetById(id);
         }
 
         public void Update(Category entity)

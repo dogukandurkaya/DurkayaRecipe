@@ -23,9 +23,9 @@
                             <td>@category.CategoryId</td>
                             <td>@category.CategoryName</td>
                             <td>
-                                <a href="/category/@category.CategoryId" class="btn btn-sm btn-primary mr-1">Edit</a>
+                                <a href="/category/categories/@category.CategoryId" class="btn btn-sm btn-primary mr-1">Edit</a>
                                 <form action="/CategoryDelete" method="post" class="d-inline">
-                                    <input type="hidden" name="categoryId" value="@category.CategoryId" />
+                                    <input type="hidden" name="CategoryId" value="@category.CategoryId" />
                                     <button type="submit" class="btn btn-sm btn-danger">Delete</button>
                                 </form>
                             </td>

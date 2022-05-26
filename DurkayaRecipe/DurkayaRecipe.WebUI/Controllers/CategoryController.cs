@@ -68,9 +68,9 @@ namespace DurkayaRecipe.WebUI.Controllers
             return View(model);
         }
 
-        public IActionResult CategoryEdit(int? id)
+        public IActionResult CategoryEdit(int id)
         {
-            var entity = _categoryService.GetByIdWithCategories(id);
+            var entity = _categoryService.GetById(id);
             var model = new CategoryModel()
             {
                 CategoryId = entity.CategoryId,

@@ -26,19 +26,11 @@ namespace DurkayaRecipe.Data.Concrete.EfCore
             }
         }
 
-       
 
-        public Category GetByIdWithCategories(int id)
+
+        public Category GetByIdWithCategories(int categoryId)
         {
-            using (var context = new DurkayaRecipeContext())
-            {
-                return context
-                    .Categories
-                    .Where(i => i.CategoryId == id)
-                    .Include(i => i.FoodCategories)
-                    .ThenInclude(i => i.Category)
-                    .FirstOrDefault();
-            }
+            throw new NotImplementedException();
         }
 
         public void Update(Category entity, int[] categoryIds)
