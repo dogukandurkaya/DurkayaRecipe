@@ -77,10 +77,6 @@ namespace DurkayaRecipe.WebUI.Controllers
                 CategoryName = entity.CategoryName,
                 CategoryDescription = entity.CategoryDescription,
                 Url = entity.Url,
-                SelectedCategories = entity
-                    .FoodCategories
-                    .Select(i => i.Category)
-                    .ToList()
             };
             ViewBag.Categories = _categoryService.GetAll();
             return View(model);
