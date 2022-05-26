@@ -9,8 +9,11 @@ namespace DurkayaRecipe.Data.Abstract
 {
     public interface ICategoryRepository : IRepository<Category>
     {
-        Category GetByIdWithCategories(int categoryId);
         void Create(Category entity, int[] categoryIds);
+        Category GetByIdWithCategories(int id);
+        void Update(Category entity, int[] categoryIds);
+
+
 
     }
 }

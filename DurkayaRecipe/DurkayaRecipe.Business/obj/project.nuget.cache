@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7F0aVYzD/8YFo2218WRUX4TJ5kf8hbIKPgLn3VTmtlMhzpTLSqjZVKQZhIoqB8QaZhzeEA8vKHlHiCtL+M1Spw==",
+  "dgSpecHash": "JSthjG07AIckh9TnnWDuhaA3eH4HxMxL+bTkowoZVlbHX+jmBQEogWOM6dqlnhwXkKLaq4WypGAhDJvf8mjftA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PATRON\\Desktop\\Visual Studio\\Projeler\\Yemek Tarifi\\DurkayaRecipe\\DurkayaRecipe.Business\\DurkayaRecipe.Business.csproj",
+  "projectFilePath": "C:\\Users\\PATRON\\Desktop\\DurkayaRecipe\\DurkayaRecipe\\DurkayaRecipe.Business\\DurkayaRecipe.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PATRON\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
     "C:\\Users\\PATRON\\.nuget\\packages\\microsoft.data.sqlite.core\\5.0.16\\microsoft.data.sqlite.core.5.0.16.nupkg.sha512",

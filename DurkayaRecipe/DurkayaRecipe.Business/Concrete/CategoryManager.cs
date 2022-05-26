@@ -42,9 +42,24 @@ namespace DurkayaRecipe.Business.Concrete
             throw new NotImplementedException();
         }
 
+        public Category GetByIdWithCategories(int id)
+        {
+            return _categoryRepository.GetByIdWithCategories(id);
+        }
+
+        public Category GetByIdWithCategories(int? id)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Update(Category entity)
         {
             throw new NotImplementedException();
+        }
+
+        public void Update(Category entity, int[] categoryIds)
+        {
+            _categoryRepository.Update(entity, categoryIds);
         }
     }
 }

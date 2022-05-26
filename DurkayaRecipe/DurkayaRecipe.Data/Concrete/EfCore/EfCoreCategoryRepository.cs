@@ -1,5 +1,6 @@
 ﻿using DurkayaRecipe.Data.Abstract;
 using DurkayaRecipe.Entity;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,9 +26,39 @@ namespace DurkayaRecipe.Data.Concrete.EfCore
             }
         }
 
-        public Category GetByIdWithCategories(int categoryId)
+       
+
+        public Category GetByIdWithCategories(int id)
         {
-            throw new NotImplementedException();
+            using (var context = new DurkayaRecipeContext())
+            {
+                return context
+                    .Categories
+                    .Where(i => i.CategoryId == id)
+                    .Include(i => i.FoodCategories)
+                    .ThenInclude(i => i.Category)
+                    .FirstOrDefault();
+            }
+        }
+
+        public void Update(Category entity, int[] categoryIds)
+        {
+            using (var context = new DurkayaRecipeContext())
+            {
+                var category = context
+                    .Categories
+                    .Include(i => i.FoodCategories)
+                    .FirstOrDefault(i => i.CategoryId == entity.CategoryId);
+                category.CategoryName = entity.CategoryName;
+                category.CategoryDescription = entity.CategoryDescription;
+                category.Url = entity.Url;
+                category.FoodCategories = categoryIds
+                    .Select(catId => new FoodCategory()
+                    {
+                        CategoryId = catId
+                    }).ToList();
+                context.SaveChanges();
+            }
         }
     }
 }

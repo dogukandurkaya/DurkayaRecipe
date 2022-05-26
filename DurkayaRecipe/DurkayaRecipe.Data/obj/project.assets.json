@@ -1097,11 +1097,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PATRON\\Desktop\\Visual Studio\\Projeler\\Yemek Tarifi\\DurkayaRecipe\\DurkayaRecipe.Data\\DurkayaRecipe.Data.csproj",
+      "projectUniqueName": "C:\\Users\\PATRON\\Desktop\\DurkayaRecipe\\DurkayaRecipe\\DurkayaRecipe.Data\\DurkayaRecipe.Data.csproj",
       "projectName": "DurkayaRecipe.Data",
-      "projectPath": "C:\\Users\\PATRON\\Desktop\\Visual Studio\\Projeler\\Yemek Tarifi\\DurkayaRecipe\\DurkayaRecipe.Data\\DurkayaRecipe.Data.csproj",
+      "projectPath": "C:\\Users\\PATRON\\Desktop\\DurkayaRecipe\\DurkayaRecipe\\DurkayaRecipe.Data\\DurkayaRecipe.Data.csproj",
       "packagesPath": "C:\\Users\\PATRON\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PATRON\\Desktop\\Visual Studio\\Projeler\\Yemek Tarifi\\DurkayaRecipe\\DurkayaRecipe.Data\\obj\\",
+      "outputPath": "C:\\Users\\PATRON\\Desktop\\DurkayaRecipe\\DurkayaRecipe\\DurkayaRecipe.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "B:\\vs3\\NuGetPackages",
@@ -1124,8 +1124,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\PATRON\\Desktop\\Visual Studio\\Projeler\\Yemek Tarifi\\DurkayaRecipe\\DurkayaRecipe.Entity\\DurkayaRecipe.Entity.csproj": {
-              "projectPath": "C:\\Users\\PATRON\\Desktop\\Visual Studio\\Projeler\\Yemek Tarifi\\DurkayaRecipe\\DurkayaRecipe.Entity\\DurkayaRecipe.Entity.csproj"
+            "C:\\Users\\PATRON\\Desktop\\DurkayaRecipe\\DurkayaRecipe\\DurkayaRecipe.Entity\\DurkayaRecipe.Entity.csproj": {
+              "projectPath": "C:\\Users\\PATRON\\Desktop\\DurkayaRecipe\\DurkayaRecipe\\DurkayaRecipe.Entity\\DurkayaRecipe.Entity.csproj"
             }
           }
         }

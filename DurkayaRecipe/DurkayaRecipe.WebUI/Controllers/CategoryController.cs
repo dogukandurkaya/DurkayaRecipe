@@ -68,6 +68,43 @@ namespace DurkayaRecipe.WebUI.Controllers
             return View(model);
         }
 
+        public IActionResult CategoryEdit(int? id)
+        {
+            var entity = _categoryService.GetByIdWithCategories(id);
+            var model = new CategoryModel()
+            {
+                CategoryId = entity.CategoryId,
+                CategoryName = entity.CategoryName,
+                CategoryDescription = entity.CategoryDescription,
+                Url = entity.Url,
+                SelectedCategories = entity
+                    .FoodCategories
+                    .Select(i => i.Category)
+                    .ToList()
+            };
+            ViewBag.Categories = _categoryService.GetAll();
+            return View(model);
+        }
+
+        [HttpPost]
+        public IActionResult CategoryEdit(CategoryModel model, int[] categoryIds)
+        {
+
+            var entity = _categoryService.GetById(model.CategoryId);
+            entity.CategoryName = model.CategoryName;
+            entity.CategoryDescription = model.CategoryDescription;
+            entity.Url = model.Url;
+            _categoryService.Update(entity, categoryIds);
+            return RedirectToAction("CategoryList");
+        }
+
+        public IActionResult CategoryDelete(int categoryId)
+        {
+            var entity = _categoryService.GetById(categoryId);
+            _categoryService.Delete(entity);
+            return RedirectToAction("CategoryList");
+        }
+
         private void CreateMessage(string message, string alertType)
         {
             var msg = new AlertMessage()
