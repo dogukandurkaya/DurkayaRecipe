@@ -6,6 +6,7 @@ using DurkayaRecipe.WebUI.EmailService;
 using DurkayaRecipe.WebUI.Identity;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -56,6 +57,21 @@ namespace DurkayaRecipe.WebUI
 
             });
 
+            services.ConfigureApplicationCookie(options =>
+            {
+                options.LoginPath = "/account/login";
+                options.LogoutPath = "/account/logout";
+                options.AccessDeniedPath = "/account/accessdenied";
+                options.ExpireTimeSpan = TimeSpan.FromMinutes(20);
+                options.SlidingExpiration = true;
+                options.Cookie = new CookieBuilder()
+                {
+                    HttpOnly = true,
+                    Name = "MiniShopApp.Security.Cookie",
+                    SameSite = SameSiteMode.Strict
+                };
+            });
+
             services.AddScoped<IEmailSender, SmtpEmailSender>(i => new SmtpEmailSender(
                Configuration["EmailSender:Host"],
                Configuration.GetValue<int>("EmailSender:Port"),
@@ -88,7 +104,7 @@ namespace DurkayaRecipe.WebUI
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.UseAuthentication();
             app.UseRouting();
 
             app.UseAuthorization();

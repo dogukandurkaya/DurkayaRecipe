@@ -377,3 +377,4 @@ C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.WebUI\obj\Debu
 C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.WebUI\obj\Debug\net5.0\Razor\Views\Admin\CategoryEdit.cshtml.g.cs
 C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.WebUI\obj\Debug\net5.0\Razor\Views\Admin\CategoryList.cshtml.g.cs
 C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.WebUI\obj\Debug\net5.0\Razor\Views\DurkayaRecipe\Iletisim.cshtml.g.cs
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.WebUI\obj\Debug\net5.0\Razor\Views\Account\ConfirmEmail.cshtml.g.cs

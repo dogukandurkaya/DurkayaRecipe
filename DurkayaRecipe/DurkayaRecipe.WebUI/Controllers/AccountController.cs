@@ -39,10 +39,34 @@ namespace DurkayaRecipe.WebUI.Controllers
         }
 
         [HttpPost]
-        public IActionResult Login(LoginModel model)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Login(LoginModel model)
         {
-            //Burada login işlemlerini gerçekleştireceğiz.
-            return View();
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            var user = await _userManager.FindByNameAsync(model.UserName);
+            if (user == null)
+            {
+                ModelState.AddModelError("", "Böyle bir kullanıcı bulunamadı!");
+                return View(model);
+            }
+
+            if (!await _userManager.IsEmailConfirmedAsync(user))
+            {
+                ModelState.AddModelError("", "Hesabınız onaylı değil! Lütfen mail adresiniz kontrol ederek, onay işlemlerini tamamlayınız.");
+                return View(model);
+            }
+
+            var result = await _signInManager.PasswordSignInAsync(user, model.Password, true, false);
+            if (result.Succeeded)
+            {
+                return Redirect(model.ReturnUrl ?? "~/");
+            }
+            ModelState.AddModelError("", "Kullanıcı adı ya da parola hatalı!");
+            return View(model);
         }
 
         public IActionResult Register()
@@ -50,12 +74,14 @@ namespace DurkayaRecipe.WebUI.Controllers
             return View();
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(RegisterModel model)
         {
             if (!ModelState.IsValid)
             {
                 return View(model);
             }
+
             var user = new User()
             {
                 FirstName = model.FirstName,
@@ -80,6 +106,7 @@ namespace DurkayaRecipe.WebUI.Controllers
                 await _emailSender.SendEmailAsync(model.Email, "MiniShopApp Hesap Onaylama", $"Lütfen email hesabınızı onaylamak için <a href='https://localhost:5001{url}'>tıklayınız.</a>");
                 return RedirectToAction("Login", "Account");
             }
+
             CreateMessage("Bir sorun oluştu, lütfen tekrar deneyiniz", "danger");
             return View(model);
         }
@@ -90,6 +117,7 @@ namespace DurkayaRecipe.WebUI.Controllers
             {
                 return View();
             }
+
             var user = await _userManager.FindByIdAsync(userId);
             if (user != null)
             {
@@ -100,10 +128,15 @@ namespace DurkayaRecipe.WebUI.Controllers
                     return View();
                 }
             }
+
             CreateMessage("Hesabınız onaylanamadı. Lütfen bilgileri kontrol ederek, yeniden deneyiniz!", "warning");
             return View();
         }
-
+        public async Task<IActionResult> Logout()
+        {
+            await _signInManager.SignOutAsync();
+            return Redirect("~/");
+        }
 
         private void CreateMessage(string message, string alertType)
         {
