@@ -54,7 +54,7 @@ namespace DurkayaRecipe.WebUI.Controllers
                 var food = new Food()
                 {
                     FoodName = model.FoodName,
-                    Url = model.Url,
+                    Url = url,
                     FoodMaterial = model.FoodMaterial,
                     ImageUrl = model.ImageUrl,
                     FoodDescription = model.FoodDescription,
@@ -99,11 +99,10 @@ namespace DurkayaRecipe.WebUI.Controllers
             {
                 JobManager urlGenerate = new JobManager();
                 var url = urlGenerate.MakeUrl(model.CategoryName);
-
                 var category = new Category()
                 {
                     CategoryName = model.CategoryName,
-                    Url = model.Url,
+                    Url = url,
                     CategoryDescription = model.CategoryDescription,
                 };
                 _categoryService.Create(category, categoryIds);
