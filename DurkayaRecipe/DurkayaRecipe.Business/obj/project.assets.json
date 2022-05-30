@@ -1048,11 +1048,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PATRON\\Desktop\\DurkayaRecipe\\DurkayaRecipe2\\DurkayaRecipe.Business\\DurkayaRecipe.Business.csproj",
+      "projectUniqueName": "C:\\Users\\PATRON\\Desktop\\DurkayaRecipe\\DurkayaRecipe\\DurkayaRecipe.Business\\DurkayaRecipe.Business.csproj",
       "projectName": "DurkayaRecipe.Business",
-      "projectPath": "C:\\Users\\PATRON\\Desktop\\DurkayaRecipe\\DurkayaRecipe2\\DurkayaRecipe.Business\\DurkayaRecipe.Business.csproj",
+      "projectPath": "C:\\Users\\PATRON\\Desktop\\DurkayaRecipe\\DurkayaRecipe\\DurkayaRecipe.Business\\DurkayaRecipe.Business.csproj",
       "packagesPath": "C:\\Users\\PATRON\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PATRON\\Desktop\\DurkayaRecipe\\DurkayaRecipe2\\DurkayaRecipe.Business\\obj\\",
+      "outputPath": "C:\\Users\\PATRON\\Desktop\\DurkayaRecipe\\DurkayaRecipe\\DurkayaRecipe.Business\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "B:\\vs3\\NuGetPackages",
@@ -1075,11 +1075,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\PATRON\\Desktop\\DurkayaRecipe\\DurkayaRecipe2\\DurkayaRecipe.Data\\DurkayaRecipe.Data.csproj": {
-              "projectPath": "C:\\Users\\PATRON\\Desktop\\DurkayaRecipe\\DurkayaRecipe2\\DurkayaRecipe.Data\\DurkayaRecipe.Data.csproj"
+            "C:\\Users\\PATRON\\Desktop\\DurkayaRecipe\\DurkayaRecipe\\DurkayaRecipe.Data\\DurkayaRecipe.Data.csproj": {
+              "projectPath": "C:\\Users\\PATRON\\Desktop\\DurkayaRecipe\\DurkayaRecipe\\DurkayaRecipe.Data\\DurkayaRecipe.Data.csproj"
             },
-            "C:\\Users\\PATRON\\Desktop\\DurkayaRecipe\\DurkayaRecipe2\\DurkayaRecipe.Entity\\DurkayaRecipe.Entity.csproj": {
-              "projectPath": "C:\\Users\\PATRON\\Desktop\\DurkayaRecipe\\DurkayaRecipe2\\DurkayaRecipe.Entity\\DurkayaRecipe.Entity.csproj"
+            "C:\\Users\\PATRON\\Desktop\\DurkayaRecipe\\DurkayaRecipe\\DurkayaRecipe.Entity\\DurkayaRecipe.Entity.csproj": {
+              "projectPath": "C:\\Users\\PATRON\\Desktop\\DurkayaRecipe\\DurkayaRecipe\\DurkayaRecipe.Entity\\DurkayaRecipe.Entity.csproj"
             }
           }
         }

@@ -153,8 +153,6 @@ C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.WebUI\obj\Debu
 C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.WebUI\obj\Debug\net5.0\Razor\Views\Admin\FoodCreate.cshtml.g.cs
 C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.WebUI\obj\Debug\net5.0\Razor\Views\Admin\FoodEdit.cshtml.g.cs
 C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.WebUI\obj\Debug\net5.0\Razor\Views\Admin\FoodList.cshtml.g.cs
-C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.WebUI\obj\Debug\net5.0\Razor\Views\Category\CategoryCreate.cshtml.g.cs
-C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.WebUI\obj\Debug\net5.0\Razor\Views\Category\CategoryList.cshtml.g.cs
 C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.WebUI\obj\Debug\net5.0\Razor\Views\DurkayaRecipe\Details.cshtml.g.cs
 C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.WebUI\obj\Debug\net5.0\Razor\Views\DurkayaRecipe\List.cshtml.g.cs
 C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.WebUI\obj\Debug\net5.0\Razor\Views\DurkayaRecipe\Search.cshtml.g.cs
@@ -174,7 +172,6 @@ C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.WebUI\obj\Debu
 C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.WebUI\obj\Debug\net5.0\ref\DurkayaRecipe.WebUI.dll
 C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.WebUI\obj\Debug\net5.0\DurkayaRecipe.WebUI.pdb
 C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.WebUI\obj\Debug\net5.0\DurkayaRecipe.WebUI.genruntimeconfig.cache
-C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.WebUI\obj\Debug\net5.0\Razor\Views\Category\CategoryEdit.cshtml.g.cs
 C:\Users\PATRON\Desktop\FrontEnd-2203-03-master\DurkayaRecipe2\DurkayaRecipe.WebUI\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\PATRON\Desktop\FrontEnd-2203-03-master\DurkayaRecipe2\DurkayaRecipe.WebUI\bin\Debug\net5.0\appsettings.json
 C:\Users\PATRON\Desktop\FrontEnd-2203-03-master\DurkayaRecipe2\DurkayaRecipe.WebUI\bin\Debug\net5.0\DurkayaRecipe.WebUI.exe
@@ -369,3 +366,14 @@ C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe2\DurkayaRecipe.WebUI\obj\Deb
 C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe2\DurkayaRecipe.WebUI\obj\Debug\net5.0\ref\DurkayaRecipe.WebUI.dll
 C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe2\DurkayaRecipe.WebUI\obj\Debug\net5.0\DurkayaRecipe.WebUI.pdb
 C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe2\DurkayaRecipe.WebUI\obj\Debug\net5.0\DurkayaRecipe.WebUI.genruntimeconfig.cache
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.WebUI\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.WebUI\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.WebUI\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.WebUI\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.WebUI\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.WebUI\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.WebUI\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.WebUI\obj\Debug\net5.0\Razor\Views\Admin\CategoryCreate.cshtml.g.cs
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.WebUI\obj\Debug\net5.0\Razor\Views\Admin\CategoryEdit.cshtml.g.cs
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.WebUI\obj\Debug\net5.0\Razor\Views\Admin\CategoryList.cshtml.g.cs
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.WebUI\obj\Debug\net5.0\Razor\Views\DurkayaRecipe\Iletisim.cshtml.g.cs
