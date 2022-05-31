@@ -1,15 +1,15 @@
-﻿using DurkayaRecipe.WebUI.EmailService;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using DurkayaRecipe.WebUI.Identity;
 using DurkayaRecipe.WebUI.Models;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DurkayaRecipe.WebUI.EmailService;
 
-namespace DurkayaRecipe.WebUI.Controllers
+namespace MiniShopApp.WebUI.Controllers
 {
     public class AccountController : Controller
     {
@@ -23,11 +23,11 @@ namespace DurkayaRecipe.WebUI.Controllers
             _signInManager = signInManager;
             _emailSender = emailSender;
         }
-
         public IActionResult Index()
         {
             return View();
         }
+
         public IActionResult Login(string ReturnUrl = null)
         {
             return View(
@@ -37,7 +37,6 @@ namespace DurkayaRecipe.WebUI.Controllers
                    }
                 );
         }
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(LoginModel model)
@@ -132,12 +131,83 @@ namespace DurkayaRecipe.WebUI.Controllers
             CreateMessage("Hesabınız onaylanamadı. Lütfen bilgileri kontrol ederek, yeniden deneyiniz!", "warning");
             return View();
         }
+
+
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
             return Redirect("~/");
         }
 
+        public IActionResult ForgotPassword()
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> ForgotPassword(string email)
+        {
+            if (String.IsNullOrEmpty(email))
+            {
+                CreateMessage("Lütfen email adresini yazınız!", "warning");
+                return View();
+            }
+
+            var user = await _userManager.FindByEmailAsync(email);
+            if (user == null)
+            {
+                CreateMessage("Böyle bir mail adresi bulunamadı. Lütfen kontrol ederek yeniden deneyiniz.", "warning");
+                return View();
+            }
+
+            var code = await _userManager.GeneratePasswordResetTokenAsync(user);
+            var url = Url.Action("ResetPassword", "Account", new
+            {
+                userId = user.Id,
+                token = code
+            });
+
+            await _emailSender.SendEmailAsync(
+                email,
+                "MiniShopApp Reset Password",
+                $"Parolanızı yeniden belirlemek için <a href='https://localhost:5001{url}'>tıklayınız.</a>"
+                );
+            CreateMessage("Parola değiştirmeniz için gerekli link mail adresinize yollanmıştır, lütfen kontrol ederek yönergeleri takip ediniz!", "warning");
+            return Redirect("~/");
+        }
+
+        public IActionResult ResetPassword(string userId, string token)
+        {
+            if (userId == null || token == null)
+            {
+                CreateMessage("Geçersiz işlem!", "danger");
+                return RedirectToAction("Index", "Home");
+            }
+            var model = new ResetPasswordModel() { Token = token };
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> ResetPassword(ResetPasswordModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+            var user = await _userManager.FindByEmailAsync(model.Email);
+            if (user == null)
+            {
+                CreateMessage("Böyle bir kullanıcı bulunamadı!", "warning");
+                return Redirect("~/");
+            }
+
+            var result = await _userManager.ResetPasswordAsync(user, model.Token, model.Password);
+            if (result.Succeeded)
+            {
+                CreateMessage("Şifre değiştirme işleminiz başarıyla gerçekleşti.", "success");
+                return RedirectToAction("Login");
+            }
+            CreateMessage("İşlem başarısız oldu, lütfen daha sonra tekrar deneyiniz!", "danger");
+            return View(model);
+        }
         private void CreateMessage(string message, string alertType)
         {
             var msg = new AlertMessage()
