@@ -152,16 +152,19 @@ namespace DurkayaRecipe.WebUI.Controllers
         {
             JobManager urlGenerate = new JobManager();
             var url = urlGenerate.MakeUrl(model.FoodName);
-
-            model.ImageUrl = urlGenerate.UploadImage(file, url);
             var entity = _foodService.GetById(model.FoodId);
+
+            if (file != null)
+            {
+                entity.ImageUrl = urlGenerate.UploadImage(file, url);
+            }
             entity.FoodName = model.FoodName;
             entity.FoodMaterial = model.FoodMaterial;
             entity.Url = model.Url;
             entity.FoodDescription = model.FoodDescription;
             entity.IsApproved = model.IsApproved;
             entity.IsHome = model.IsHome;
-            entity.ImageUrl = model.ImageUrl;
+            entity.ImageUrl = entity.ImageUrl;
             _foodService.Update(entity, categoryIds);
             return RedirectToAction("FoodList");
         }

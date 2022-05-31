@@ -21,7 +21,7 @@ namespace DurkayaRecipe.WebUI.Models
         public string FoodMaterial { get; set; }
 
         [Required(ErrorMessage = "Açıklama zorunludur!")]
-        [StringLength(500, MinimumLength = 20, ErrorMessage = "Açıklama 20-900 karakter uzunluğunda olmalıdır!")]
+        [StringLength(1500, MinimumLength = 20, ErrorMessage = "Açıklama 20-1500 karakter uzunluğunda olmalıdır!")]
         public string FoodDescription { get; set; }
         public string Url { get; set; }
         public bool IsApproved { get; set; }
