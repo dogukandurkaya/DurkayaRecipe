@@ -160,7 +160,7 @@ namespace DurkayaRecipe.WebUI.Controllers
             }
             entity.FoodName = model.FoodName;
             entity.FoodMaterial = model.FoodMaterial;
-            entity.Url = model.Url;
+            entity.Url = url;
             entity.FoodDescription = model.FoodDescription;
             entity.IsApproved = model.IsApproved;
             entity.IsHome = model.IsHome;
@@ -190,7 +190,7 @@ namespace DurkayaRecipe.WebUI.Controllers
             var entity = _categoryService.GetById(model.CategoryId);
             entity.CategoryName = model.CategoryName;
             entity.CategoryDescription = model.CategoryDescription;
-            entity.Url = model.Url;
+            entity.Url = url;
             _categoryService.Update(entity, categoryIds);
             return RedirectToAction("CategoryList");
         }

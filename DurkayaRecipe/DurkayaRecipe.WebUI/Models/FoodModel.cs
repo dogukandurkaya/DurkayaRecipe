@@ -17,7 +17,7 @@ namespace DurkayaRecipe.WebUI.Models
         public string ImageUrl { get; set; }
 
         [Required(ErrorMessage = "Malzeme zorunludur!")]
-        [StringLength(500, MinimumLength = 20, ErrorMessage = "Açıklama 20-500 karakter uzunluğunda olmalıdır!")]
+        [StringLength(1000, MinimumLength = 20, ErrorMessage = "Açıklama 20-1000 karakter uzunluğunda olmalıdır!")]
         public string FoodMaterial { get; set; }
 
         [Required(ErrorMessage = "Açıklama zorunludur!")]

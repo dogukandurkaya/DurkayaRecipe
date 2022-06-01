@@ -134,6 +134,7 @@ namespace DurkayaRecipe.Data.Concrete.EfCore
                     .Include(i => i.FoodCategories)
                     .FirstOrDefault(i => i.FoodId == entity.FoodId);
                 food.FoodName = entity.FoodName;
+                food.FoodMaterial = entity.FoodMaterial;
                 food.FoodDescription = entity.FoodDescription;
                 food.Url = entity.Url;
                 food.ImageUrl = entity.ImageUrl;
