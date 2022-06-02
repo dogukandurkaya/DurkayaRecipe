@@ -102,7 +102,7 @@ namespace MiniShopApp.WebUI.Controllers
                     token = code
                 });
                 //mail gönderme işlemleri
-                await _emailSender.SendEmailAsync(model.Email, "MiniShopApp Hesap Onaylama", $"Lütfen email hesabınızı onaylamak için <a href='https://localhost:5001{url}'>tıklayınız.</a>");
+                await _emailSender.SendEmailAsync(model.Email, "DurkayaRecipe Hesap Onaylama", $"Lütfen email hesabınızı onaylamak için <a href='https://localhost:5001{url}'>tıklayınız.</a>");
                 return RedirectToAction("Login", "Account");
             }
 
@@ -168,7 +168,7 @@ namespace MiniShopApp.WebUI.Controllers
 
             await _emailSender.SendEmailAsync(
                 email,
-                "MiniShopApp Reset Password",
+                "DurkayaRecipe Reset Password",
                 $"Parolanızı yeniden belirlemek için <a href='https://localhost:5001{url}'>tıklayınız.</a>"
                 );
             CreateMessage("Parola değiştirmeniz için gerekli link mail adresinize yollanmıştır, lütfen kontrol ederek yönergeleri takip ediniz!", "warning");
