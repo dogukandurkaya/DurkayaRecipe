@@ -6,14 +6,13 @@
     </div>
     <div class="col-md-9">
         <h1 class="mb-3 text-white">@Model.Food.FoodName</h1>
-        <hr />
+        <hr class="text-light" />
         @foreach (var item in Model.Categories)
         {
 <a style="text-decoration: none" asp-controller="DurkayaRecipe"
    asp-action="List"
    asp-route-category="@item.Url"
-   class="btn btn-link p-0 mb-3 text-light">@item.CategoryName </a>            
-   }
+   class="btn btn-link p-0 mb-3 text-light">@item.CategoryName </a>}
         <div class="mb-3 col-md-5">
             <div class="mb-3 bg-light">
                 <h6>Materials:</h6>
@@ -24,4 +23,5 @@
             </div>
         </div>
     </div>
+    <a href="~/Home/Index" style="width:100px;" class="btn btn-sm btn-light">Geri</a>
 </div>
