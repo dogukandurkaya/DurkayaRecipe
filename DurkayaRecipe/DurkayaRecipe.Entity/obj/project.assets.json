@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PATRON\\Desktop\\DurkayaRecipe2\\DurkayaRecipe\\DurkayaRecipe.Entity\\DurkayaRecipe.Entity.csproj",
+      "projectUniqueName": "C:\\Users\\PATRON\\Desktop\\DurkayaRecipe\\DurkayaRecipe\\DurkayaRecipe.Entity\\DurkayaRecipe.Entity.csproj",
       "projectName": "DurkayaRecipe.Entity",
-      "projectPath": "C:\\Users\\PATRON\\Desktop\\DurkayaRecipe2\\DurkayaRecipe\\DurkayaRecipe.Entity\\DurkayaRecipe.Entity.csproj",
+      "projectPath": "C:\\Users\\PATRON\\Desktop\\DurkayaRecipe\\DurkayaRecipe\\DurkayaRecipe.Entity\\DurkayaRecipe.Entity.csproj",
       "packagesPath": "C:\\Users\\PATRON\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PATRON\\Desktop\\DurkayaRecipe2\\DurkayaRecipe\\DurkayaRecipe.Entity\\obj\\",
+      "outputPath": "C:\\Users\\PATRON\\Desktop\\DurkayaRecipe\\DurkayaRecipe\\DurkayaRecipe.Entity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "B:\\vs3\\NuGetPackages",
