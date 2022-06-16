@@ -5,8 +5,7 @@
 @section Scripts{
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
-    <script>
-        $(document).ready(function () {
+    <script>$(document).ready(function () {
             $('#userList').DataTable(
                 {
                     lengthMenu: [
@@ -14,12 +13,11 @@
                         [2, 5, 10, 20, 40, "Tümü"]
                     ],
                     language: {
-                        url: "//cdn.datatables.net/plug-ins/1.12.1/i18n/tr.json"
+                        url:"//cdn.datatables.net/plug-ins/1.12.1/i18n/tr.json"
                     }
                 }
             );
-        });
-    </script>
+        });</script>
 }
 <div class="row">
     <div class="col-md-12">
@@ -69,4 +67,3 @@
             </tbody>
         </table>
     </div>
-</div>

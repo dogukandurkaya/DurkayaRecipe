@@ -112,6 +112,44 @@ namespace DurkayaRecipe.WebUI
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
+                    name: "adminuserlist",
+                    pattern: "admin/user/list",
+                    defaults: new { controller = "Admin", action = "UserList" }
+                    );
+
+                endpoints.MapControllerRoute(
+                    name: "adminusercreate",
+                    pattern: "admin/user/create",
+                    defaults: new { controller = "Admin", action = "UserCreate" }
+                    );
+
+
+                endpoints.MapControllerRoute(
+                    name: "adminuseredit",
+                    pattern: "admin/user/{id}",
+                    defaults: new { controller = "Admin", action = "UserEdit" }
+                    );
+
+                endpoints.MapControllerRoute(
+                    name: "adminrolelist",
+                    pattern: "admin/role/list",
+                    defaults: new { controller = "Admin", action = "RoleList" }
+                    );
+
+                endpoints.MapControllerRoute(
+                    name: "adminrolecreate",
+                    pattern: "admin/role/create",
+                    defaults: new { controller = "Admin", action = "RoleCreate" }
+                    );
+
+                endpoints.MapControllerRoute(
+                    name: "adminroleedit",
+                    pattern: "admin/role/{id}",
+                    defaults: new { controller = "Admin", action = "RoleEdit" }
+                    );
+
+
+                endpoints.MapControllerRoute(
                     name: "admincategorycreate",
                     pattern: "admin/categories/create",
                     defaults: new { controller = "Admin", action = "CategoryCreate" }

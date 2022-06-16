@@ -11,11 +11,14 @@ using System.IO;
 using System.Linq;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using DurkayaRecipe.WebUI.Identity;
 
 namespace DurkayaRecipe.WebUI.Controllers
 {
+    [Authorize(Roles = "Admin")]
+
     public class AdminController : Controller
     {
         private readonly IFoodService _foodService;
@@ -31,16 +34,19 @@ namespace DurkayaRecipe.WebUI.Controllers
             _userManager = userManager;
         }
 
+
         public IActionResult UserList()
         {
             return View(_userManager.Users);
         }
+
         public IActionResult UserCreate()
         {
             var roles = _roleManager.Roles.Select(i => i.Name);
             ViewBag.Roles = roles;
             return View();
         }
+
         [HttpPost]
         public async Task<IActionResult> UserCreate(UserDetailsModel model, string[] selectedRoles)
         {
@@ -73,6 +79,7 @@ namespace DurkayaRecipe.WebUI.Controllers
             ViewBag.Roles = roles2;
             return View(model);
         }
+
         public async Task<IActionResult> UserEdit(string id)
         {
             var user = await _userManager.FindByIdAsync(id);
@@ -134,6 +141,7 @@ namespace DurkayaRecipe.WebUI.Controllers
             ViewBag.Roles = roles3;
             return View(model);
         }
+
         public IActionResult RoleList()
         {
             return View(_roleManager.Roles);
@@ -271,7 +279,7 @@ namespace DurkayaRecipe.WebUI.Controllers
                     IsApproved = model.IsApproved,
                     IsHome = model.IsHome
                 };
-                _foodService.Create(food, categoryIds);
+                _foodService .Create(food, categoryIds);
 
                 CreateMessage("Ürün başarıyla eklenmiştir", "success");
                 return RedirectToAction("FoodList");
