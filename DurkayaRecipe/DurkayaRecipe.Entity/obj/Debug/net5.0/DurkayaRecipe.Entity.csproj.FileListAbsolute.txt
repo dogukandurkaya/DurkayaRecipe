@@ -55,4 +55,3 @@ C:\Users\PATRON\Desktop\DurkayaRecipe2\DurkayaRecipe\DurkayaRecipe.Entity\obj\De
 C:\Users\PATRON\Desktop\DurkayaRecipe2\DurkayaRecipe\DurkayaRecipe.Entity\obj\Debug\net5.0\DurkayaRecipe.Entity.dll
 C:\Users\PATRON\Desktop\DurkayaRecipe2\DurkayaRecipe\DurkayaRecipe.Entity\obj\Debug\net5.0\ref\DurkayaRecipe.Entity.dll
 C:\Users\PATRON\Desktop\DurkayaRecipe2\DurkayaRecipe\DurkayaRecipe.Entity\obj\Debug\net5.0\DurkayaRecipe.Entity.pdb
-C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.Entity\obj\Debug\net5.0\DurkayaRecipe.Entity.csproj.AssemblyReference.cache

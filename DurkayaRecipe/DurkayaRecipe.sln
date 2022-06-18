@@ -11,8 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DurkayaRecipe.Data", "Durka
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DurkayaRecipe.Business", "DurkayaRecipe.Business\DurkayaRecipe.Business.csproj", "{6E798F2D-639D-42A3-87DD-E9CBFF4E2C15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DurkayaRecipe.WebApi", "DurkayaRecipe.WebApi\DurkayaRecipe.WebApi.csproj", "{19924265-0C43-410A-A4D3-D2C4F2085885}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,10 +33,6 @@ Global
 		{6E798F2D-639D-42A3-87DD-E9CBFF4E2C15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E798F2D-639D-42A3-87DD-E9CBFF4E2C15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E798F2D-639D-42A3-87DD-E9CBFF4E2C15}.Release|Any CPU.Build.0 = Release|Any CPU
-		{19924265-0C43-410A-A4D3-D2C4F2085885}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{19924265-0C43-410A-A4D3-D2C4F2085885}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{19924265-0C43-410A-A4D3-D2C4F2085885}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{19924265-0C43-410A-A4D3-D2C4F2085885}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
