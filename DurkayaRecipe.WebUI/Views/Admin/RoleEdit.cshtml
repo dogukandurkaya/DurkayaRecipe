@@ -11,23 +11,25 @@
             <table style="background-color: #bdc3c7" class="table table-bordered table-sm">
                 @if (Model.NonMembers.Count() == 0)
                 {
-    <tr>
-        <td colspan="2">Bütün kullanıcılar role ait</td>
-    </tr> }
+                    <tr>
+                        <td colspan="2">Bütün kullanıcılar role ait</td>
+                    </tr>
+                }
                 else
                 {
-    <tr>
-        <td>User Name</td>
-        <td width="100">Select</td>
-    </tr>
+                    <tr>
+                        <td>User Name</td>
+                        <td width="100">Select</td>
+                    </tr>
                     @foreach (var user in Model.NonMembers)
                     {
-    <tr>
-        <td>@user.UserName</td>
-        <td>
-            <input type="checkbox" name="IdsToAdd" value="@user.Id" />
-        </td>
-    </tr>}}
+                        <tr>
+                            <td>@user.UserName</td>
+                            <td>
+                                <input type="checkbox" name="IdsToAdd" value="@user.Id" />
+                            </td>
+                        </tr>
+                    }           }
             </table>
         </div>
 
@@ -36,27 +38,31 @@
             <table style="background-color: #bdc3c7" class="table table-bordered table-sm">
                 @if (Model.Members.Count() == 0)
                 {
-    <tr>
-        <td colspan="2">Bu role ait kullanıcı bulunmamaktadır.</td>
-    </tr> }
+                    <tr>
+                        <td colspan="2">Bu role ait kullanıcı bulunmamaktadır.</td>
+                    </tr>
+                }
                 else
                 {
-    <tr>
-        <td>User Name</td>
-        <td width="100">Select</td>
-    </tr>
+                    <tr>
+                        <td>User Name</td>
+                        <td width="100">Select</td>
+                    </tr>
                     @foreach (var user in Model.Members)
                     {
-    <tr>
-        <td>@user.UserName</td>
-        <td>
-            <input type="checkbox" name="IdsToDelete" value="@user.Id" />
-        </td>
-    </tr>}}
+                        <tr>
+                            <td>@user.UserName</td>
+                            <td>
+                                <input type="checkbox" name="IdsToDelete" value="@user.Id" />
+                            </td>
+                        </tr>
+                    }           }
             </table>
         </div>
     </div>
     <div class="">
-        <button style="background-color: #bdc3c7" type="submit" class="btn">Save Changes</button>
+        <button style="background-color: #bdc3c7" type="submit" class="btn mb-1">Save Changes</button>
+        <br />
+        <a style="background-color: #bdc3c7" href="~/Admin/RoleList" class="btn btn-sm mb-1">Back</a>
     </div>
 </form>

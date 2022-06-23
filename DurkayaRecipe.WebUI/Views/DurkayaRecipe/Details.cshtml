@@ -9,10 +9,10 @@
         <hr style="color: #bdc3c7" />
         @foreach (var item in Model.Categories)
         {
-<a style="text-decoration: none" asp-controller="DurkayaRecipe"
+<a style="text-decoration: none; color:#bdc3c7" asp-controller="DurkayaRecipe"
    asp-action="List"
    asp-route-category="@item.Url"
-   class="btn btn-link p-0 mb-3 text-light">@item.CategoryName </a>}
+   class="btn btn-link p-0 mb-3">@item.CategoryName </a>}
         <div class="mb-3 col-md-5">
             <div style="background-color: #bdc3c7" class="mb-3">
                 <h6>Materials:</h6>
