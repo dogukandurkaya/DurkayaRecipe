@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0lLPzaURKIOlRqqzaJK4XQkte0U+mh66h+UBCZx8h1vQScSNzYau4CEYSOnHv2AqDgFM6C/F1XekcltEjVXOow==",
+  "dgSpecHash": "wCdl8owYA1KWGhALhmL/RN8Vj5ZFiXAjbdf+Dp7hUQY2b4LDwHQH8Kh/I+6BSjMHdwbwHVJnqUS6IPFB2dVhVA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PATRON\\Desktop\\deneme2\\DurkayaRecipe\\DurkayaRecipe\\DurkayaRecipe.WebUI\\DurkayaRecipe.WebUI.csproj",
+  "projectFilePath": "C:\\Users\\PATRON\\Desktop\\DurkayaRecipe\\DurkayaRecipe.WebUI\\DurkayaRecipe.WebUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PATRON\\.nuget\\packages\\fluentscheduler\\5.5.1\\fluentscheduler.5.5.1.nupkg.sha512",
     "C:\\Users\\PATRON\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

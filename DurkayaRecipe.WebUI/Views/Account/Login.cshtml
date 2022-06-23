@@ -1,5 +1,5 @@
 ﻿@model LoginModel
-<h6 class="display-4 text-light">Login</h6>
+<h6 style="color: #bdc3c7" class="display-4">Login</h6>
 <hr />
 <form asp-controller="Account" asp-action="Login" method="post">
     <div class="row">
@@ -8,26 +8,26 @@
             <div asp-validation-summary="All" class="text-danger">
                 <div class="form-group row mb-2">
                     <div class="col-sm-3">
-                        <label asp-for="UserName" class="col-form-label text-light"></label>
+                        <label style="color: #bdc3c7" asp-for="UserName" class="col-form-label"></label>
                     </div>
                     <div class="col-sm-9">
-                        <input asp-for="UserName" type="text" class="form-control" />
+                        <input style="background-color: #bdc3c7" asp-for="UserName" type="text" class="form-control" />
                     </div>
                 </div>
 
                 <div class="form-group row mb-2">
                     <div class="col-sm-3">
-                        <label asp-for="Password" class="col-form-label text-light"></label>
+                        <label style="color: #bdc3c7" asp-for="Password" class="col-form-label"></label>
                     </div>
                     <div class="col-sm-9">
-                        <input asp-for="Password" type="password" class="form-control" />
+                        <input style="background-color: #bdc3c7" asp-for="Password" type="password" class="form-control" />
                     </div>
                 </div>
 
                 <div class="form-group row mb-2">
                     <div class="col-sm-9 offset-sm-3">
-                        <button class="btn btn-light">Login</button>
-                        <a style="text-decoration:none;" href="/Account/ForgotPassword" class="btn btn-link text-light">Forgot Password</a>
+                        <button style="background-color: #bdc3c7" class="btn">Login</button>
+                        <a style="text-decoration:none; color:#bdc3c7" href="/Account/ForgotPassword" class="btn btn-link">Forgot Password</a>
                     </div>
                 </div>
             </div>

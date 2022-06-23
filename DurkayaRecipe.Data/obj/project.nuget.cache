@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rL/lOkFZBNz54McmTOWaHXgYZOPLFMYfZcmtF9I1O+fSaHWvaXLQiGVf74Pko/fb33SG4o8aZxCCU7Mr1qkUyA==",
+  "dgSpecHash": "1KMAzPbNSbtcqVeEhZOV+BbeyNi5O7DNsP9hUyqiqx8MmUGuX+II3kDwPf3ZVfcVTQhJe5nGq08hBQJ1cJbnzA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PATRON\\Desktop\\deneme2\\DurkayaRecipe\\DurkayaRecipe\\DurkayaRecipe.Data\\DurkayaRecipe.Data.csproj",
+  "projectFilePath": "C:\\Users\\PATRON\\Desktop\\DurkayaRecipe\\DurkayaRecipe.Data\\DurkayaRecipe.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PATRON\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\PATRON\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
