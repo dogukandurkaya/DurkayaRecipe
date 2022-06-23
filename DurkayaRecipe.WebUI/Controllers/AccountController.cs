@@ -37,6 +37,7 @@ namespace MiniShopApp.WebUI.Controllers
                    }
                 );
         }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(LoginModel model)
@@ -72,6 +73,7 @@ namespace MiniShopApp.WebUI.Controllers
         {
             return View();
         }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(RegisterModel model)
