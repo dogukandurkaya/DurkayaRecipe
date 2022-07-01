@@ -63,7 +63,5 @@ namespace DurkayaRecipe.Data.Concrete.EfCore
             new FoodCategory() { Food = Foods[2], Category=Categories[2] },
             new FoodCategory() { Food = Foods[3], Category=Categories[3] }
         };
-
-
     }
 }
