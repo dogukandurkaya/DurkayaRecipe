@@ -55,8 +55,6 @@ namespace DurkayaRecipe.Business.Concrete
         public Food GetFoodDetails(string url)
         {
             return _foodRepository.GetFoodDetails(url);
-        
-        
         }
 
         public List<Food> GetFoodsByCategory(string name, int page, int pageSize)
