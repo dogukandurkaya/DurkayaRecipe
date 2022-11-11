@@ -1459,11 +1459,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PATRON\\Desktop\\DurkayaRecipe\\DurkayaRecipe.WebUI\\DurkayaRecipe.WebUI.csproj",
+      "projectUniqueName": "C:\\Users\\PATRON\\Desktop\\Project\\DurkayaRecipe\\DurkayaRecipe.WebUI\\DurkayaRecipe.WebUI.csproj",
       "projectName": "DurkayaRecipe.WebUI",
-      "projectPath": "C:\\Users\\PATRON\\Desktop\\DurkayaRecipe\\DurkayaRecipe.WebUI\\DurkayaRecipe.WebUI.csproj",
+      "projectPath": "C:\\Users\\PATRON\\Desktop\\Project\\DurkayaRecipe\\DurkayaRecipe.WebUI\\DurkayaRecipe.WebUI.csproj",
       "packagesPath": "C:\\Users\\PATRON\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PATRON\\Desktop\\DurkayaRecipe\\DurkayaRecipe.WebUI\\obj\\",
+      "outputPath": "C:\\Users\\PATRON\\Desktop\\Project\\DurkayaRecipe\\DurkayaRecipe.WebUI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PATRON\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1480,11 +1480,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\PATRON\\Desktop\\DurkayaRecipe\\DurkayaRecipe.Business\\DurkayaRecipe.Business.csproj": {
-              "projectPath": "C:\\Users\\PATRON\\Desktop\\DurkayaRecipe\\DurkayaRecipe.Business\\DurkayaRecipe.Business.csproj"
+            "C:\\Users\\PATRON\\Desktop\\Project\\DurkayaRecipe\\DurkayaRecipe.Business\\DurkayaRecipe.Business.csproj": {
+              "projectPath": "C:\\Users\\PATRON\\Desktop\\Project\\DurkayaRecipe\\DurkayaRecipe.Business\\DurkayaRecipe.Business.csproj"
             },
-            "C:\\Users\\PATRON\\Desktop\\DurkayaRecipe\\DurkayaRecipe.Data\\DurkayaRecipe.Data.csproj": {
-              "projectPath": "C:\\Users\\PATRON\\Desktop\\DurkayaRecipe\\DurkayaRecipe.Data\\DurkayaRecipe.Data.csproj"
+            "C:\\Users\\PATRON\\Desktop\\Project\\DurkayaRecipe\\DurkayaRecipe.Data\\DurkayaRecipe.Data.csproj": {
+              "projectPath": "C:\\Users\\PATRON\\Desktop\\Project\\DurkayaRecipe\\DurkayaRecipe.Data\\DurkayaRecipe.Data.csproj"
             }
           }
         }
