@@ -67,7 +67,7 @@ namespace DurkayaRecipe.WebUI
                 options.Cookie = new CookieBuilder()
                 {
                     HttpOnly = true,
-                    Name = "MiniShopApp.Security.Cookie",
+                    Name = "DurkayaRecipe.Security.Cookie",
                     SameSite = SameSiteMode.Strict
                 };
             });

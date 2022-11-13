@@ -16,7 +16,5 @@ namespace DurkayaRecipe.Business.Abstract
         void Delete(Category entity);
         void Create(Category entity, int[] categoryIds);
         void Update(Category entity, int[] categoryIds);
-
-
     }
 }
